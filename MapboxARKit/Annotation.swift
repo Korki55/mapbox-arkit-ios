@@ -6,13 +6,12 @@ public class Annotation: NSObject {
     public var calloutImage: UIImage?
     public var anchor: MBARAnchor?
     public var tag: String!
-    public var fileName: String!
+    public var artwork: Artwork?
     
-    public init(location: CLLocation, calloutImage: UIImage?, tag: String!, fileName: String) {
+    public init(location: CLLocation, calloutImage: UIImage?, artwork: Artwork?) {
         self.location = location
         self.calloutImage = calloutImage
-        self.tag = tag
-        self.fileName = fileName
+        self.artwork = artwork
     }
     
 }
